@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{ 
+char ch;
+ printf("\n enter a charactor:");
+scanf("%c",&ch);
+ if(ch>='A' && ch<='Z')
+    {
+    printf("\n%c given charactor is uppercase",ch);
+    }
+  else if(ch>='a' && ch<='z') 
+  {
+  printf("\n%c given charactor is lowercase",ch);
+  }
+  else
+  {
+  printf("\n%d given charactor is not a alabet",ch);
+  }
+getch();
+return 0;
+}

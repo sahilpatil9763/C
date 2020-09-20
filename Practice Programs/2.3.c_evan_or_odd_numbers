@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{ 
+int no;
+ printf("\n enter a number:");
+scanf("%d",&no);
+ if(no%2==0)
+    printf("\n%d is a even number",no);
+ else 
+  printf("\n%d is a odd number",no);
+getch();
+return 0;
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+struct student
+{
+ char name,course;
+ int roll;
+ float marks;
+}
+s;
+int main()
+{
+  printf("\nstudent information");
+  printf("\n enter student name:");
+  scanf("%s",&s.name);
+  printf("\n enter student course:");
+  scanf("%s",&s.course);
+  printf("\n enter student roll:");
+  scanf("%i",&s.roll);
+  printf("\n enter student marks:");
+  scanf("%f",&s.marks);
+
+return 0;
+}
+    
