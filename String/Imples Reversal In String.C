@@ -1,29 +1,28 @@
 #include<conio.h>
 #include<stdio.h>
-#include<string.h>
 
-int strlen(char*);
-
-void strrev(char*, char*);
+int strlenX(char*);
+void strrevX(char*);
 
 int main()
 {
-    char Str[20] = {};
+    char Str[40] = {};
 
     printf("\n Enter a String : ");
     gets(Str);
 
-    strrev(Str);
+    strrevX(Str);
     printf("\n Given String after Reversal = %s",Str);
 
     getch();
     return 0;
 }
 
-void strrev(char*Src, char*Dest)
+void strrevX(char* Src)
 {
-    int i=0, j=0;
-    j= strlen(Src) - 1;
+    int i = 0, j = 0;
+
+    j = strlenX(Src) - 1;
 
     while(j > i)
     {
@@ -32,15 +31,17 @@ void strrev(char*Src, char*Dest)
         Src[j] = ch;
 
         i++;
-        j++;
+        j--;
     }
+
     return;
 }
 
-int strlen(char*Src)
+int strlenX(char* Src)
 {
     int Len = 0;
 
-    for(Len = 0; *Src != '\0'; Len++)
-        return Len;
+    for(Len = 0; *Src != '\0'; Len++, Src++);
+
+    return Len;
 }
