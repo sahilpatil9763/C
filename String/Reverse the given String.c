@@ -13,7 +13,7 @@ int main()
 
     strRevX(Str1, Str2);
 
-    printf("\n Output String : %s",Str2);
+    printf(" \n Output String : %s",Str2);
 
     getch();
     return 0;
